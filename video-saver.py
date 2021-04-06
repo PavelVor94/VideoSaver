@@ -36,8 +36,8 @@ def load_page(url: str):
     page = html.parse(StringIO(main_page.get_attribute(('innerHTML'))))
 
     # запись html в файл
-    with open('html.txt', 'w') as f:
-        f.write(etree.tostring(page, pretty_print= True).decode('utf-8'))
+    with open('html.txt', 'wb') as f:
+        f.write(etree.tostring(page, pretty_print= True, encoding='utf-16'))
 
     """
     Составление запроса Xpath для поиска элементов, содержащих ссылки на youtube(для youtube плееров на странице)
