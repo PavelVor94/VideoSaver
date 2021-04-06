@@ -1,0 +1,6 @@
+argparse
+lxml
+requests
+user_agent
+pytube
+selenium
